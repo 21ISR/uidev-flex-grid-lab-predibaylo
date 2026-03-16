@@ -60,7 +60,9 @@ body {
     grid-column: 2/4;
 
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    
+
 }
 
 /* Сообщения */
@@ -73,9 +75,13 @@ body {
     grid-row: 2;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: baseline;
     flex-wrap: wrap;
     flex: 1;
+    row-gap: 20px;
+    
+
 
 
 }
@@ -85,6 +91,7 @@ body {
     background: #cce5ff;
     padding: 5px;
     border-radius: 5px;
+
 }
 
 /* Поле ввода */
@@ -93,6 +100,11 @@ body {
     padding: 10px;
 
     grid-row:3;
+    
+    align-self: flex-start;
+}
+.message--foreign {
+    align-self: flex-end;
 }
 
 /* Футер */
